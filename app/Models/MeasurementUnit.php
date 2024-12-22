@@ -11,6 +11,10 @@ class MeasurementUnit extends Model {
 
     protected $fillable = ['symbol', 'short_symbol', 'is_active'];
 
+    protected $attributes = [
+        'is_active' => 1
+    ];
+    
     protected $casts = [
         'is_active' => 'boolean'
     ];
